@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.shapeHolderContainer {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.shapeHolder{
+  background-color: green;
+  align-content: center;
+
+}
+
+.placedContainer {
+  display: flex;
+  flex-direction: row;
+  margin:16px;
+  gap: 8px;
+}
+
+.placedHolder {
+  background-color: white;
+  width: 100%;
+  align-content: center;
+}
+
+.placedImg{
+  width: 200px;
+}
