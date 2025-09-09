@@ -26,16 +26,23 @@ body {
 }
 
 .shapeHolderContainer {
-  background-color: blue;
+  background-color: white;
+  border-radius: 12px;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   gap: 8px;
+  justify-content: center;
+  margin:auto;
+  padding: 12px;
 }
 
 .shapeHolder{
-  background-color: green;
   align-content: center;
+}
 
+.selected {
+  background-color: pink;
 }
 
 .placedContainer {
@@ -47,8 +54,11 @@ body {
 
 .placedHolder {
   background-color: white;
+  padding: 12px;
   width: 100%;
+  height: max(200px, fit-content);
   align-content: center;
+  border-radius: 12px;
 }
 
 .placedImg{
