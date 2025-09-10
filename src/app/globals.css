@@ -25,20 +25,34 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.movingImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 .shapeHolderContainer {
-  background-color: white;
   border-radius: 12px;
   width: fit-content;
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 16px;
   justify-content: center;
   margin:auto;
   padding: 12px;
+  cursor: url(/public/shape-images/BananaVector.svg), auto;
 }
 
 .shapeHolder{
+  background-color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  height: max(200px, fit-content);
   align-content: center;
+  display:flex;
+  justify-content: center;
+  border-radius: 12px;
 }
 
 .selected {
@@ -46,21 +60,28 @@ body {
 }
 
 .placedContainer {
+  background-color: white;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
   margin:16px;
   gap: 8px;
+  height: max(fit-content, 200px);
+  padding: 16px;
 }
 
 .placedHolder {
-  background-color: white;
   padding: 12px;
   width: 100%;
-  height: max(200px, fit-content);
-  align-content: center;
   border-radius: 12px;
+  background-color: white;
+
+  align-content: center;
+  display:flex;
+  justify-content: center;
 }
 
 .placedImg{
   width: 200px;
+  justify-content: center;
 }
